@@ -1,5 +1,7 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
+{{#component "outer-demo" buttons=(hash inner=(component "demo" elementId="hello"))}}
+{{/component}}
+
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
